@@ -8,6 +8,7 @@ defmodule Alchemist.Application do
   @impl true
   def start(_type, _args) do
     children = [
+      Alchemist.Repo
       # Starts a worker by calling: Alchemist.Worker.start_link(arg)
       # {Alchemist.Worker, arg}
     ]
